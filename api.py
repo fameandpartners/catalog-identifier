@@ -1,7 +1,7 @@
 import pandas as pd
 from flask import Blueprint
 from flask_restplus import Resource, fields, reqparse, Namespace, Api
-
+from flask.json import jsonify
 missing_product_id = set()
 
 def match_catalog(raw_gui):
@@ -36,7 +36,9 @@ catalog_matching_input.add_argument('raw_gui', required=True, type=str,
 class CatalogMatching(Resource):
     def get(self):
         args = catalog_matching_input.parse_args()
-        return match_catalog(args['raw_gui'])
+        return jsonify({
+            'matched_result': match_catalog(args['raw_gui'])
+        })
 
 
 # testing = pd.read_csv('unmatched.csv')

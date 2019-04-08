@@ -36,7 +36,9 @@ catalog_matching_input.add_argument('raw_gui', required=True, type=str,
 class CatalogMatching(Resource):
     def get(self):
         args = catalog_matching_input.parse_args()
-        return match_catalog(args['raw_gui'])
+        return jsonify({
+            'matched_gui': match_catalog(args['raw_gui'])
+        })
 
 
 # testing = pd.read_csv('unmatched.csv')

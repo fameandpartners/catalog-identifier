@@ -11,8 +11,14 @@ def match_catalog(raw_gui):
     first_item = temp_df.sort_values('matches').iloc[0]
     if not first_item['matches']:
         missing_product_id.add(parameter_list[0])
-        return raw_gui
-    return first_item['id']
+        return {
+            'matched_gui': first_item['id'],
+            'success': False
+        }
+    return {
+        'matched_gui': first_item['id'],
+        'success': True
+    }
 
 def match_attributes(reference_list, parameter_list):
     if parameter_list[0] != reference_list[0]:

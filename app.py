@@ -1,16 +1,11 @@
 from flask import Flask
-from flask_restplus import Api
 from flask_cors import CORS
-from api import CatalogMatching
-import pytz
 
 class Application(object):
 
     def __init__(self, config, debug=True):
         self.flask_app = Flask(__name__)
         CORS(self.flask_app)
-        api = Api(self.flask_app)
-        api.add_resource(CatalogMatching, '/match_catalog')
 
         self.debug = debug
         self._configure_app(config)

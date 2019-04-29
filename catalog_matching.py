@@ -2,9 +2,36 @@ from pymongo import MongoClient
 import pandas as pd
 import re
 import config
+from datetime import datetime, timedelta
+import dateutil.parser
 
 client = MongoClient(config.MONGO_URI)
 db_name = config.MONGO_DB_NAME
+url = config.CATALOG_URL
+
+def get_file_or_use_existing():
+    """
+    Check if the csv file is updated within the past 12 hours, if it is not, update it with a new file
+
+    """
+
+    file = open('last_updated', 'r')
+    lines = file.readlines()
+    if (lines == []):
+        last_updated_time = datetime.now() - timedelta(hours=14)
+    else:
+        last_updated_time = dateutil.parser.parse(lines[0])
+
+    if last_updated_time < (datetime.now() - timedelta(hours=12)):
+        file = open('last_updated', 'w')
+
+        print('Getting New Catalog Data')
+        pd.read_csv(url).to_csv('catalog.csv')
+        file.writelines([datetime.now().isoformat()])
+        return pd.read_csv('catalog.csv')
+    else:
+        return pd.read_csv('catalog.csv')
+
 
 def match_catalog(raw_gui):
     """
@@ -21,8 +48,7 @@ def match_catalog(raw_gui):
 
     """
     # TODO: make the url a parameter, instead of hard coded. But right now there is no point for this.
-    url = 'http://api.godatafeed.com/v1/9bdeb5a1a7e5404f92b3133261a797e9/feeds/RE1pNHgyTnVDNm9sc3VPcUZVd1d1Zz09/download'
-    catalog_data = pd.read_csv(url)
+    catalog_data = get_file_or_use_existing()
     catalog_data['id_split'] = catalog_data['id'].apply(lambda x: x.split('~'))
 
     # Split the parameter input and try to match attributes

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b92a43a-21e5-42f5-bfd5-b8ca351690d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/last_updated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog_matching.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog_matching.py" afterDir="false" />
-    </list>
+    <list default="true" id="1b92a43a-21e5-42f5-bfd5-b8ca351690d8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +27,12 @@
         <counts>
           <entry key="Procfile" value="2" />
           <entry key="config" value="1" />
-          <entry key="csv" value="4" />
+          <entry key="csv" value="5" />
           <entry key="ebextentions" value="2" />
           <entry key="gitignore" value="1" />
           <entry key="last_updated" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="11" />
+          <entry key="py" value="12" />
           <entry key="txt" value="1" />
           <entry key="yml" value="1" />
         </counts>
@@ -44,8 +40,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="11" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="12" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -55,8 +51,9 @@
           <entry key="dummy" value="11" />
           <entry key="ebextentions" value="78" />
           <entry key="gitignore" value="30" />
+          <entry key="last_updated" value="2" />
           <entry key="md" value="1494" />
-          <entry key="py" value="5655" />
+          <entry key="py" value="5718" />
           <entry key="txt" value="27" />
           <entry key="yml" value="18" />
         </counts>
@@ -64,8 +61,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="1494" />
-          <entry key="PLAIN_TEXT" value="217" />
-          <entry key="Python" value="5655" />
+          <entry key="PLAIN_TEXT" value="219" />
+          <entry key="Python" value="5718" />
           <entry key="YAML" value="18" />
         </counts>
       </usages-collector>
@@ -76,20 +73,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog_matching.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="254">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1556550272501" expanded="true" signature="243:1062" ph="..." />
-                <marker date="1556550272501" expanded="true" signature="1089:1094" ph="..." />
+                <marker date="1556550397787" expanded="true" signature="268:962" ph="..." />
+                <marker date="1556550397787" expanded="true" signature="989:994" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/last_updated">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -106,15 +116,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -183,7 +184,6 @@
         <option value="$PROJECT_DIR$/.elasticbeanstalk/config.yml" />
         <option value="$PROJECT_DIR$/.ebextentions" />
         <option value="$PROJECT_DIR$/.ebextentions/python.config" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -192,8 +192,9 @@
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/last_updated" />
         <option value="$PROJECT_DIR$/catalog_matching.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/last_updated" />
       </list>
     </option>
   </component>
@@ -339,13 +340,6 @@
     <entry file="file://$PROJECT_DIR$/.elasticbeanstalk/config.yml" />
     <entry file="file://$PROJECT_DIR$/.ebextentions/python.config" />
     <entry file="file://$PROJECT_DIR$/api.py" />
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -405,21 +399,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6980" />
+        <state relative-caret-position="180">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/last_updated">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog_matching.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="254">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1556550272501" expanded="true" signature="243:1062" ph="..." />
-            <marker date="1556550272501" expanded="true" signature="1089:1094" ph="..." />
+            <marker date="1556550397787" expanded="true" signature="268:962" ph="..." />
+            <marker date="1556550397787" expanded="true" signature="989:994" ph="..." />
           </folding>
         </state>
       </provider>
